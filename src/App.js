@@ -49,7 +49,7 @@ function Home({ setReport }) {
         formData.append("students", file);
       });
 
-      const response = await fetch("http://127.0.0.1:5000/analyze", {
+      const response = await fetch("https://eduintel-backend.onrender.com/upload", {
         method: "POST",
         body: formData,
       });
