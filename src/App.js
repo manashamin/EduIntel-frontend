@@ -49,7 +49,7 @@ function Home({ setReport }) {
         formData.append("students", file);
       });
 
-      const response = await fetch("https://eduintel-backend.onrender.com/upload", {
+      const response = await fetch("https://eduintel-backend.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
